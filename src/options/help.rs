@@ -3,7 +3,7 @@ use std::fs;
 pub fn help() {
     let paths = fs::read_dir("src/options/animals").unwrap();
 
-    println!("{}", "\nCLI PET has the following options:\n");
+    println!("\nCLI PET has the following options:\n");
 
     for path in paths {
         let file_name = path.unwrap().file_name();
