@@ -1,6 +1,8 @@
-use crate::systems::display;
+use crate::systems::display_pet;
 
-pub fn cat() {
+pub fn cat(name: &str) {
+  let lines = 4; // The number of lines in the output
+
     let cat1 = "
       /\\_/\\
      (>o.o<)
@@ -11,5 +13,5 @@ pub fn cat() {
      (>-.-<)
     \\(     )";
 
-    display::display(cat1, cat2);
+    display_pet::display_pet(cat1, cat2, name, lines);
 }
