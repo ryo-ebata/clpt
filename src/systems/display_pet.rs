@@ -13,7 +13,6 @@ fn clear_lines(n: usize) {
 }
 
 pub fn display_pet(seen1: &str, seen2: &str, name: &str, lines: usize) {
-    let lines = lines; // The number of lines in the output
     println!("{}", "name: ".to_string() + name);
     loop {
         println!("{}", seen1);
