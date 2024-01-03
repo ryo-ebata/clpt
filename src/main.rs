@@ -53,5 +53,5 @@ fn main() {
 
 fn fetch_pet() -> Pet {
     let file = File::open("src/public/clipet.json").expect("Could not open file");
-    return serde_json::from_reader(file).expect("Failed to read JSON data");
+    serde_json::from_reader(file).expect("Failed to read JSON data")
 }
